@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Peak Interface</string>
+    <string name="string_title">Your Peak Brain Map</string>
+    <string name="string_sub_title">Review and compare how you\'re\n performing in each brain skill caegory</string>
+    <string name="string_you">You</string>
+    <string name="string_age_group">Age Group</string>
+    <string name="string_profession">Profession</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="string_share">share</string>
+    <string name="peak_brain">Peak Brain</string>
+    <string name="focus">Focus</string>
+    <string name="memory">Memory</string>
+    <string name="mental_agility">Mental\n Agility</string>
+    <string name="problem_solving">Problem\n Solving</string>
+    <string name="language">Language</string>
+    <string name="rubik_s_cube">Rubik\'s Cube</string>
+</resources>

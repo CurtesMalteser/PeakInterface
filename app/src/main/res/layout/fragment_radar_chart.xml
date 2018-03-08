@@ -1,0 +1,284 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.curtesmalteser.peakinterface.MainActivity">
+
+    <com.curtesmalteser.peakinterface.RadarChart
+        android:id="@+id/myRadar"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/peakBrainCircle" />
+
+    <TextView
+        android:id="@+id/peakBrainLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/gotham_ssm_light"
+        android:text="@string/peak_brain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/peakBrainScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gotham_ssm_medium"
+        app:layout_constraintEnd_toStartOf="@+id/peakBrainLabel"
+        app:layout_constraintStart_toEndOf="@+id/peakBrainLabel"
+        app:layout_constraintTop_toBottomOf="@+id/peakBrainLabel"
+        tools:text="820" />
+
+    <ImageView
+        android:id="@+id/peakBrainCircle"
+        android:layout_width="11dp"
+        android:layout_height="11dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintEnd_toStartOf="@+id/peakBrainScore"
+        app:layout_constraintStart_toEndOf="@+id/peakBrainScore"
+        app:layout_constraintTop_toBottomOf="@+id/peakBrainScore"
+        app:srcCompat="@drawable/peak_circle" />
+
+    <TextView
+        android:id="@+id/focusLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="0dp"
+        android:fontFamily="@font/gotham_ssm_light"
+        android:text="@string/focus"
+        app:layout_constraintBottom_toTopOf="@+id/focusScore"
+        app:layout_constraintEnd_toStartOf="@+id/focusScore"
+        app:layout_constraintStart_toEndOf="@+id/focusScore" />
+
+    <TextView
+        android:id="@+id/focusScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gotham_ssm_medium"
+        app:layout_constraintBottom_toTopOf="@+id/focusCircle"
+        app:layout_constraintEnd_toStartOf="@+id/focusCircle"
+        app:layout_constraintStart_toEndOf="@+id/focusCircle"
+        tools:text="320" />
+
+    <ImageView
+        android:id="@+id/focusCircle"
+        android:layout_width="11dp"
+        android:layout_height="11dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginRight="84dp"
+        app:layout_constraintBottom_toTopOf="@+id/topGuide"
+        app:layout_constraintEnd_toStartOf="@+id/verticalGuide"
+        app:srcCompat="@drawable/focus_circle" />
+
+    <TextView
+        android:id="@+id/memoryLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gotham_ssm_light"
+        android:text="@string/memory"
+        app:layout_constraintBottom_toTopOf="@+id/memoryScore"
+        app:layout_constraintEnd_toStartOf="@+id/memoryScore"
+        app:layout_constraintStart_toEndOf="@+id/memoryScore" />
+
+    <TextView
+        android:id="@+id/memoryScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/gotham_ssm_medium"
+        app:layout_constraintBottom_toTopOf="@+id/memoryCircle"
+        app:layout_constraintEnd_toStartOf="@+id/memoryCircle"
+        app:layout_constraintStart_toEndOf="@+id/memoryCircle"
+        tools:text="320" />
+
+    <ImageView
+        android:id="@+id/memoryCircle"
+        android:layout_width="11dp"
+        android:layout_height="11dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginStart="84dp"
+        app:layout_constraintBottom_toTopOf="@+id/topGuide"
+        app:layout_constraintStart_toStartOf="@+id/verticalGuide"
+        app:srcCompat="@drawable/memory_circle" />
+
+    <TextView
+        android:id="@+id/mentalAgilityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/gotham_ssm_light"
+        android:gravity="center"
+        android:text="@string/mental_agility"
+        app:layout_constraintEnd_toStartOf="@+id/mentalAgilityCircle"
+        app:layout_constraintStart_toEndOf="@+id/mentalAgilityCircle"
+        app:layout_constraintTop_toBottomOf="@+id/mentalAgilityCircle" />
+
+    <TextView
+        android:id="@+id/mentalAgilityScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/gotham_ssm_medium"
+        app:layout_constraintEnd_toStartOf="@+id/mentalAgilityLabel"
+        app:layout_constraintStart_toEndOf="@+id/mentalAgilityLabel"
+        app:layout_constraintTop_toBottomOf="@+id/mentalAgilityLabel"
+        tools:text="320" />
+
+    <ImageView
+        android:id="@+id/mentalAgilityCircle"
+        android:layout_width="11dp"
+        android:layout_height="11dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginRight="107dp"
+        app:layout_constraintEnd_toStartOf="@+id/verticalGuide"
+        app:layout_constraintTop_toBottomOf="@+id/middleGuide"
+        app:srcCompat="@drawable/mental_agility_circle" />
+
+    <TextView
+        android:id="@+id/problemSolvingLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/gotham_ssm_light"
+        android:gravity="center"
+        android:text="@string/problem_solving"
+        app:layout_constraintEnd_toStartOf="@+id/problemSolvingCircle"
+        app:layout_constraintStart_toEndOf="@+id/problemSolvingCircle"
+        app:layout_constraintTop_toBottomOf="@+id/problemSolvingCircle" />
+
+    <TextView
+        android:id="@+id/problemSolvingScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/gotham_ssm_medium"
+        app:layout_constraintEnd_toStartOf="@+id/problemSolvingLabel"
+        app:layout_constraintStart_toEndOf="@+id/problemSolvingLabel"
+        app:layout_constraintTop_toBottomOf="@+id/problemSolvingLabel"
+        tools:text="320" />
+
+    <ImageView
+        android:id="@+id/problemSolvingCircle"
+        android:layout_width="11dp"
+        android:layout_height="11dp"
+        android:layout_marginLeft="107dp"
+        android:layout_marginStart="107dp"
+        app:layout_constraintStart_toStartOf="@+id/verticalGuide"
+        app:layout_constraintTop_toBottomOf="@+id/middleGuide"
+        app:srcCompat="@drawable/problem_solving_circle" />
+
+    <TextView
+        android:id="@+id/languageLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/gotham_ssm_light"
+        android:gravity="center"
+        android:text="@string/language"
+        app:layout_constraintEnd_toStartOf="@+id/languageCircle"
+        app:layout_constraintStart_toEndOf="@+id/languageCircle"
+        app:layout_constraintTop_toBottomOf="@+id/languageCircle" />
+
+    <TextView
+        android:id="@+id/languageScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/gotham_ssm_medium"
+        app:layout_constraintEnd_toStartOf="@+id/languageLabel"
+        app:layout_constraintStart_toEndOf="@+id/languageLabel"
+        app:layout_constraintTop_toBottomOf="@+id/languageLabel"
+        tools:text="320" />
+
+    <ImageView
+        android:id="@+id/languageCircle"
+        android:layout_width="11dp"
+        android:layout_height="11dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        app:layout_constraintEnd_toStartOf="@+id/verticalGuide"
+        app:layout_constraintTop_toTopOf="@+id/bottomGuide"
+        app:srcCompat="@drawable/language_circle" />
+
+    <TextView
+        android:id="@+id/rubiksCubeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/gotham_ssm_light"
+        android:gravity="center"
+        android:text="@string/rubik_s_cube"
+        app:layout_constraintEnd_toStartOf="@+id/rubiksCubeCircle"
+        app:layout_constraintStart_toEndOf="@+id/rubiksCubeCircle"
+        app:layout_constraintTop_toBottomOf="@+id/rubiksCubeCircle" />
+
+    <TextView
+        android:id="@+id/rubiksCubeScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/gotham_ssm_medium"
+        app:layout_constraintEnd_toStartOf="@+id/rubiksCubeLabel"
+        app:layout_constraintStart_toEndOf="@+id/rubiksCubeLabel"
+        app:layout_constraintTop_toBottomOf="@+id/rubiksCubeLabel"
+        tools:text="320" />
+
+    <ImageView
+        android:id="@+id/rubiksCubeCircle"
+        android:layout_width="11dp"
+        android:layout_height="11dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
+        app:layout_constraintStart_toStartOf="@+id/verticalGuide"
+        app:layout_constraintTop_toTopOf="@+id/bottomGuide"
+        app:srcCompat="@drawable/rubik_s_cube_circle" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/topGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="112dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/middleGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="199dp" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/bottomGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="279dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/verticalGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+</android.support.constraint.ConstraintLayout>
